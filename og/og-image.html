@@ -1,0 +1,62 @@
+<!doctype html>
+<!--
+    Source for public/og-image.jpg (1200×630). Regenerate after a name or role change
+    (macOS, from the repo root):
+
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new \
+        --hide-scrollbars --window-size=1200,630 --force-device-scale-factor=1 \
+        --virtual-time-budget=3000 --screenshot=/tmp/og.png "file://$PWD/og/og-image.html" \
+      && sips -s format jpeg -s formatOptions 90 /tmp/og.png --out public/og-image.jpg
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @font-face {
+            font-family: "Instrument Sans";
+            font-weight: 400 700;
+            src: url("../public/fonts/instrument-sans.woff2") format("woff2");
+        }
+
+        html,
+        body {
+            width: 1200px;
+            height: 630px;
+            margin: 0;
+            background: #fafafa;
+        }
+
+        /* Centred, so platforms that crop previews to a centred square keep the name. */
+        body {
+            box-sizing: border-box;
+            padding: 96px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: "Instrument Sans", system-ui, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 88px;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+            line-height: 1.2;
+            color: #171717;
+        }
+
+        p {
+            margin: 12px 0 0;
+            font-size: 44px;
+            color: #737373;
+        }
+    </style>
+</head>
+<body>
+    <h1>Noah Guerin</h1>
+    <p>Software Engineer in Belgium</p>
+</body>
+</html>
